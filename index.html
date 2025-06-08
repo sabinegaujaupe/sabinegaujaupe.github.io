@@ -4,27 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaujaupe Brīvdienu Mājas</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Brīvdienu māja GaujaUpe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Gaujaupe Brīvdienu Mājas</h1>
-        <nav>
-            <a href="https://www.facebook.com/GaujaUpe/" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/gaujaupe/" target="_blank">Instagram</a>
-            <a href="https://www.airbnb.com/rooms/52423865" target="_blank">Airbnb</a>
-            <a href="https://www.booking.com/hotel/lv/gaujaupe-2.lv.html" target="_blank">Booking</a>
-        </nav>
+        <h1>Brīvdienu māja GaujaUpe</h1>
+        <p>Skaista atpūta pie Gaujas ar dabas tuvumu un ērtībām</p>
     </header>
-    <main>
-        <section class="hero">
-            <h2>Atpūta pie dabas – Gaujas krastā</h2>
-            <p>Mēs piedāvājam mierīgu un ērtu atpūtu ģimenēm, draugiem vai pāriem.</p>
-        </section>
-    </main>
+    <div class="container">
+        <h2>Par mums</h2>
+        <p>GaujaUpe ir mājīga brīvdienu māja, kas atrodas pie skaistās Gaujas upes. Šeit vari baudīt mieru, dabu un kvalitatīvu atpūtu kopā ar ģimeni vai draugiem.</p>
+
+        <h2>Galerija</h2>
+        <div class="gallery">
+            <img src="foto1.png" alt="GaujaUpe">
+            <img src="foto2.png" alt="GaujaUpe">
+            <img src="foto3.png" alt="GaujaUpe">
+            <img src="foto4.png" alt="GaujaUpe">
+            <img src="foto5.png" alt="GaujaUpe">
+        </div>
+
+        <h2>Kontakti</h2>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/GaujaUpe/">GaujaUpe</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/gaujaupe/">@gaujaupe</a></p>
+        <p><strong>Airbnb:</strong> <a href="https://www.airbnb.com/rooms/52423865">Skatīt Airbnb</a></p>
+        <p><strong>Booking:</strong> <a href="https://www.booking.com/hotel/lv/gaujaupe-2.lv.html">Skatīt Booking</a></p>
+
+        <h2>Atlaide!</h2>
+        <p><strong>Izmanto kodu <code>SABINE10</code> un saņem 10% atlaidi!</strong></p>
+    </div>
     <footer>
-        <p>© 2025 Gaujaupe Brīvdienu Mājas</p>
+        &copy; 2025 GaujaUpe. Visas tiesības aizsargātas.
     </footer>
 </body>
 </html>
