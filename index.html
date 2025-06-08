@@ -3,61 +3,59 @@
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brīvdienu mājas Gaujaupe</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Brīvdienu mājas GaujaUpe</title>
     <style>
         body {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background-image: url('background.png');
+            background: url('background.png') no-repeat center center fixed;
             background-size: cover;
-            background-position: center;
             color: white;
-            text-align: center;
-            padding: 80px 20px;
         }
-        section {
-            padding: 20px;
-            max-width: 900px;
+        .language-switcher {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .language-switcher button {
+            margin: 5px;
+            padding: 5px 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            cursor: pointer;
+        }
+        .content {
+            padding: 100px 30px 30px 30px;
+            max-width: 800px;
             margin: auto;
-        }
-        img {
-            max-width: 100%;
-            border-radius: 12px;
-            margin-bottom: 20px;
-        }
-        footer {
-            text-align: center;
-            background: #333;
-            color: white;
-            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Brīvdienu mājas Gaujaupe</h1>
-        <p>Izbaudi mieru un skaisto dabu Gaujmalā</p>
-    </header>
-    <section>
-        <p>Mūsu brīvdienu mājas piedāvā mierpilnu atpūtu Gaujas krastā. Mēs atrodamies klusā vietā ar iespēju izbaudīt dabu, upes tuvumu un mieru. Mūsu viesi bieži atgriežas, jo šeit ir viss nepieciešamais kvalitatīvai atpūtai.</p>
-        <p>Māja ir pilnībā aprīkota, ar virtuvi, vannasistabu, guļamistabām un terasi. Pieejama sauna, grila vieta un bērnu rotaļu laukums. Tā ir ideāla vieta ģimenēm, pāriem vai draugu kompānijai.</p>
-        <p>Gaujaupe ir populārs galamērķis arī vietējiem tūristiem. Mēs lepojamies ar mūsu viesu atsauksmēm un rūpējamies par katru detaļu. Rezervē tagad un sajūti mieru.</p>
-        <p><strong>Izmanto kodu <span style="color: green;">SABINE10</span> un saņem 10% atlaidi!</strong></p>
-        <img src="img1.png" alt="Gaujaupe māja">
-        <img src="img2.png" alt="Terase ar skatu">
-        <img src="img3.png" alt="Interjers">
-    </section>
-    <footer>
-        <p>Sazinies: <a href="https://www.facebook.com/GaujaUpe/" style="color: lightblue;">Facebook</a> | <a href="https://www.instagram.com/gaujaupe/" style="color: lightblue;">Instagram</a></p>
-        <p>© 2025 Brīvdienu mājas Gaujaupe</p>
-    </footer>
+    <div class="language-switcher">
+        <button onclick="switchLanguage('lv')">LV</button>
+        <button onclick="switchLanguage('en')">EN</button>
+    </div>
+    <div class="content">
+        <div id="lv">
+            <h1>Brīvdienu mājas GaujaUpe</h1>
+            <p>Laipni lūdzam GaujaUpe! Mūsu brīvdienu mājas atrodas gleznainā vietā pie Gaujas upes. Šeit Jūs gaida miers, daba un komforts. Mājas ir aprīkotas ar visu nepieciešamo ģimenes atpūtai vai romantiskam brīvdienām. Ir iespēja grilēt, baudīt dabu un pastaigāties mežā. Katru gadu pie mums viesojas daudzi laimīgi ceļotāji, kuri novērtē mūsu mājīgumu un apkalpošanu.</p>
+            <p>GaujaUpe piedāvā arī iespēju rezervēt mājas caur Booking.com un Airbnb. Mēs esam pieejami arī Facebook un Instagram, kur varat apskatīt jaunākos attēlus un atsauksmes.</p>
+            <p>Izmanto kodu <strong>SABINE10</strong> un saņem 10% atlaidi!</p>
+        </div>
+        <div id="en" style="display: none;">
+            <h1>Holiday Home GaujaUpe</h1>
+            <p>Welcome to GaujaUpe! Our holiday homes are located in a picturesque place by the Gauja river. Here you'll find peace, nature, and comfort. The homes are fully equipped for family vacations or romantic getaways. You can grill, enjoy nature, and go for a walk in the forest. Every year we host many happy travelers who appreciate our coziness and service.</p>
+            <p>GaujaUpe is also available on Booking.com and Airbnb. You can find us on Facebook and Instagram for the latest pictures and reviews.</p>
+            <p>Use the code <strong>SABINE10</strong> to get 10% off!</p>
+        </div>
+    </div>
+    <script>
+        function switchLanguage(lang) {
+            document.getElementById('lv').style.display = lang === 'lv' ? 'block' : 'none';
+            document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+        }
+    </script>
 </body>
 </html>
